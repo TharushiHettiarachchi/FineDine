@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "100569643108",
+    "project_id": "finedine-3970b",
+    "storage_bucket": "finedine-3970b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100569643108:android:ac0a4d2e14acb67be4c771",
+        "android_client_info": {
+          "package_name": "lk.webstudio.finedine"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBnDIKgELyx0Jf7fanXsqhnZK3HbfAT9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
