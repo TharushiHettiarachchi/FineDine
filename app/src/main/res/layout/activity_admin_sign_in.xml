@@ -6,10 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/yellow"
-    tools:context=".SignUpActivity">
+    android:backgroundTint="@color/yellow"
+    tools:context=".AdminSignInActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView7"
         android:layout_width="272dp"
         android:layout_height="254dp"
         android:layout_marginTop="16dp"
@@ -22,99 +23,84 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="32dp"
-        app:cardBackgroundColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:fontFamily="@font/aoboshi_one"
-                android:text="@string/signUp"
-                android:textColor="@color/black"
-                android:textSize="32sp"
+                android:text="@string/adminSignIn"
+                android:textSize="34sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.555"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/fname"
+                android:id="@+id/editTextText3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="24dp"
                 android:ems="10"
-                android:hint="@string/firstName"
+                android:hint="@string/mobile"
                 android:inputType="text"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
             <EditText
-                android:id="@+id/lname"
+                android:id="@+id/editTextTextPassword"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:ems="10"
-                android:hint="@string/lastName"
-                android:inputType="text"
+                android:hint="@string/password"
+                android:inputType="textPassword"
                 android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="@+id/fname"
-                app:layout_constraintStart_toStartOf="@+id/fname"
-                app:layout_constraintTop_toBottomOf="@+id/fname" />
-
-            <EditText
-                android:id="@+id/mobile"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:ems="10"
-                android:hint="@string/mobile"
-                android:inputType="phone"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="@+id/lname"
-                app:layout_constraintStart_toStartOf="@+id/lname"
-                app:layout_constraintTop_toBottomOf="@+id/lname" />
+                app:layout_constraintEnd_toEndOf="@+id/editTextText3"
+                app:layout_constraintStart_toStartOf="@+id/editTextText3"
+                app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
 
             <Button
-                android:id="@+id/signUpBtn"
+                android:id="@+id/adminSignInBtn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="24dp"
                 android:backgroundTint="@color/yellow"
-                android:text="@string/signUp"
+                android:text="@string/signIn"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/mobile" />
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
             <TextView
-                android:id="@+id/link2"
+                android:id="@+id/link3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/link1"
+                android:text="@string/back"
                 android:textColor="@color/grey"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/signUpBtn" />
+                app:layout_constraintEnd_toEndOf="@+id/adminSignInBtn"
+                app:layout_constraintHorizontal_bias="0.528"
+                app:layout_constraintStart_toStartOf="@+id/adminSignInBtn"
+                app:layout_constraintTop_toBottomOf="@+id/adminSignInBtn" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Content-->
+    <LinearLayout
+        android:id="@+id/linear_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:paddingTop="48dp"
+            app:titleTextColor="@color/black">
+
+            <ImageButton
+                android:id="@+id/imageButtonmenu"
+                android:layout_width="28dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/transparent"
+                android:src="@drawable/menuapp"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbarTxt"
+                app:layout_constraintTop_toTopOf="@+id/toolbarTxt" />
+
+            <TextView
+                android:id="@+id/toolbarTxt1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/menuItem2"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <FrameLayout
+            android:id="@+id/frame_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </ScrollView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/addFoodBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/yellow"
+                    android:text="@string/menuItem2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/description1"
+                    app:layout_constraintStart_toStartOf="@+id/description1"
+                    app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vegetarian"
+                    app:layout_constraintEnd_toEndOf="@+id/description1"
+                    app:layout_constraintStart_toStartOf="@+id/description1"
+                    app:layout_constraintTop_toBottomOf="@+id/description1" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextFoodName1"
+                    app:layout_constraintStart_toStartOf="@+id/editTextFoodName1"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextFoodName1" />
+
+                <EditText
+                    android:id="@+id/description1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="@string/description"
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@+id/halfPortionPrice1"
+                    app:layout_constraintStart_toStartOf="@+id/halfPortionPrice1"
+                    app:layout_constraintTop_toBottomOf="@+id/halfPortionPrice1" />
+
+                <EditText
+                    android:id="@+id/halfPortionPrice1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="@string/halfPortionPrice"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@+id/fullPortionPrice1"
+                    app:layout_constraintStart_toStartOf="@+id/fullPortionPrice1"
+                    app:layout_constraintTop_toBottomOf="@+id/fullPortionPrice1" />
+
+                <EditText
+                    android:id="@+id/fullPortionPrice1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="@string/fullPortionPrice"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextFoodName1"
+                    app:layout_constraintStart_toStartOf="@+id/editTextFoodName1"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+                <EditText
+                    android:id="@+id/editTextFoodName1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:ems="10"
+                    android:hint="@string/nameOfTheFood"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/addFoodImage" />
+
+                <ImageView
+                    android:id="@+id/addFoodImage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/camera" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+    <!--Content-->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/admin_menu"
+        app:headerLayout="@layout/header_layout"
+        app:itemIconTint="@color/yellow"
+
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/menuItem_home"
+            android:icon="@drawable/homeicon"
+            android:title="@string/menuItem1"
+
+            />
+        <item
+            android:id="@+id/menuItem_addFood"
+            android:icon="@drawable/admin"
+            android:title="@string/menuItem4"
+
+            />
+        <item
+            android:id="@+id/menuItem_myOrders"
+            android:icon="@drawable/admin"
+            android:title="@string/menuItem6"
+
+            />
+        <item
+            android:id="@+id/menuItem_logout"
+            android:icon="@drawable/admin"
+            android:title="@string/menuItem5"
+
+            />
+
+
+</menu>
